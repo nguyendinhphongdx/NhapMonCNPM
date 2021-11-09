@@ -85,6 +85,7 @@ namespace PMQLBanHang.Views
             // 
             // cbNhanVien
             // 
+            this.cbNhanVien.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbNhanVien.FormattingEnabled = true;
             this.cbNhanVien.Location = new System.Drawing.Point(70, 2);
             this.cbNhanVien.Name = "cbNhanVien";

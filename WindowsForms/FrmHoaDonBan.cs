@@ -64,6 +64,11 @@ namespace PMQLBanHang.Views
                 btn_Xoa.Enabled = false;
                 btn_thanhtoan.Enabled = false;
             }
+            if (maloaitk == 3)
+            {
+                cbNhanVien.
+            }
+
         }
         private void RefreshFrm()
         {
@@ -76,7 +81,7 @@ namespace PMQLBanHang.Views
             banhang.Mahd = maHDSelected;
             banhang.Manv = Convert.ToInt32(cbNhanVien.SelectedValue);
             banhang.Ngaylap = dtpLap.Value;
-            banhang.Tongtien = Convert.ToInt32(-1);
+            banhang.Tongtien =  txtTongtien.Text.Length!=0 ? Convert.ToInt32(txtTongtien.Text) : 0;
             return banhang;
         }
 
